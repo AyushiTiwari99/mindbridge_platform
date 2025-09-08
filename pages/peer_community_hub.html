@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peer Community Hub - MindBridge Platform</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Connect with peers in safe, anonymous support communities. Share experiences, join wellness challenges, and find understanding in moderated discussion spaces." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmindbridge2226back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-gentle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-inter font-semibold text-primary">MindBridge</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mental_health_platform.html" class="text-text-secondary hover:text-primary transition-gentle">Home</a>
+                    <a href="student_dashboard.html" class="text-text-secondary hover:text-primary transition-gentle">Dashboard</a>
+                    <a href="counselor_connection.html" class="text-text-secondary hover:text-primary transition-gentle">Find Counselor</a>
+                    <a href="peer_community_hub.html" class="text-primary font-medium">Community</a>
+                    <a href="mood_wellness_tracker.html" class="text-text-secondary hover:text-primary transition-gentle">Mood Tracker</a>
+                    <a href="professional_portal.html" class="text-text-secondary hover:text-primary transition-gentle">For Professionals</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="text-primary hover:text-primary-600 font-medium transition-gentle">Sign In</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-secondary-50 via-primary-50 to-accent-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                    Find Your <span class="text-gradient-healing">Support Community</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Connect with peers who understand your journey. Share experiences, join wellness challenges, and build meaningful connections in our safe, anonymous community spaces.
+                </p>
+                
+                <!-- Community Stats -->
+                <div class="flex flex-wrap justify-center gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">2,847</div>
+                        <div class="text-sm text-text-secondary">Active Members</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary">156</div>
+                        <div class="text-sm text-text-secondary">Support Groups</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent">24/7</div>
+                        <div class="text-sm text-text-secondary">Peer Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Sidebar Navigation -->
+                <div class="lg:col-span-1">
+                    <div class="card-elevated sticky top-24">
+                        <h3 class="font-inter font-semibold text-text-primary mb-4">Community Spaces</h3>
+                        <nav class="space-y-2">
+                            <a href="javascript:void(0)" class="flex items-center p-3 rounded-lg bg-primary-50 text-primary font-medium">
+                                <svg class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                                </svg>
+                                Discussion Forums
+                            </a>
+                            <a href="javascript:void(0)" class="flex items-center p-3 rounded-lg text-text-secondary hover:bg-surface hover:text-primary transition-gentle">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                                Support Groups
+                            </a>
+                            <a href="javascript:void(0)" class="flex items-center p-3 rounded-lg text-text-secondary hover:bg-surface hover:text-primary transition-gentle">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Wellness Challenges
+                            </a>
+                            <a href="javascript:void(0)" class="flex items-center p-3 rounded-lg text-text-secondary hover:bg-surface hover:text-primary transition-gentle">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                                </svg>
+                                Success Stories
+                            </a>
+                        </nav>
+
+                        <!-- Quick Actions -->
+                        <div class="mt-6 pt-6 border-t border-border-light">
+                            <h4 class="font-inter font-medium text-text-primary mb-3">Quick Actions</h4>
+                            <div class="space-y-2">
+                                <button class="w-full btn-primary text-sm py-2">Start New Discussion</button>
+                                <button class="w-full bg-secondary-100 text-secondary px-4 py-2 rounded-lg font-medium text-sm hover:bg-secondary-200 transition-gentle">Join Support Group</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-3">
+                    <!-- Topic Categories -->
+                    <div class="mb-8">
+                        <div class="flex flex-wrap gap-3">
+                            <button class="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium">All Topics</button>
+                            <button class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium hover:bg-primary-50 hover:text-primary transition-gentle">Academic Anxiety</button>
+                            <button class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium hover:bg-primary-50 hover:text-primary transition-gentle">Relationship Stress</button>
+                            <button class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium hover:bg-primary-50 hover:text-primary transition-gentle">Life Transitions</button>
+                            <button class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium hover:bg-primary-50 hover:text-primary transition-gentle">Social Anxiety</button>
+                            <button class="px-4 py-2 bg-surface text-text-secondary rounded-full text-sm font-medium hover:bg-primary-50 hover:text-primary transition-gentle">Depression Support</button>
+                        </div>
+                    </div>
+
+                    <!-- Discussion Feed -->
+                    <div class="space-y-6">
+                        <!-- Featured Discussion -->
+                        <div class="card-elevated border-l-4 border-l-accent">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-accent font-semibold text-sm">📌</span>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="font-medium text-text-primary">@StudyBuddy2024</span>
+                                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs rounded-full font-medium">Featured</span>
+                                            <span class="text-text-secondary text-sm">2 hours ago</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2 mt-1">
+                                            <span class="px-2 py-1 bg-warning-100 text-warning text-xs rounded-full">Academic Anxiety</span>
+                                            <span class="px-2 py-1 bg-error-100 text-error text-xs rounded-full">⚠️ Trigger Warning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="text-text-secondary hover:text-primary">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="font-inter font-semibold text-text-primary mb-3">Dealing with Finals Week Anxiety - You're Not Alone</h3>
+                            <p class="text-text-secondary mb-4">
+                                Finals week is approaching and I'm feeling completely overwhelmed. The pressure feels unbearable sometimes. I wanted to share some coping strategies that have helped me and hear what works for others...
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                        <span class="text-sm">47</span>
+                                    </button>
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                        <span class="text-sm">23 replies</span>
+                                    </button>
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                        </svg>
+                                        <span class="text-sm">Share</span>
+                                    </button>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 bg-success-100 rounded-full flex items-center justify-center mr-2">
+                                        <svg class="h-4 w-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-xs text-text-secondary">Moderator Approved</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Regular Discussions -->
+                        <div class="card-elevated">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-secondary font-semibold text-sm">🌱</span>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="font-medium text-text-primary">@GrowthMindset</span>
+                                            <span class="text-text-secondary text-sm">4 hours ago</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2 mt-1">
+                                            <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Life Transitions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-inter font-semibold text-text-primary mb-3">Starting Graduate School - Tips for Managing Imposter Syndrome</h3>
+                            <p class="text-text-secondary mb-4">
+                                Just started my master's program and feeling like I don't belong here. Anyone else experience this? Looking for advice on how to build confidence...
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                        <span class="text-sm">32</span>
+                                    </button>
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                        <span class="text-sm">18 replies</span>
+                                    </button>
+                                </div>
+                                <div class="flex -space-x-2">
+                                    <div class="w-6 h-6 bg-primary-100 rounded-full border-2 border-white flex items-center justify-center">
+                                        <span class="text-xs text-primary">👩‍⚕️</span>
+                                    </div>
+                                    <span class="text-xs text-text-secondary ml-2">Expert Response</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-elevated">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-primary font-semibold text-sm">💙</span>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="font-medium text-text-primary">@SupportiveListener</span>
+                                            <span class="text-text-secondary text-sm">6 hours ago</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2 mt-1">
+                                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs rounded-full">Social Anxiety</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="font-inter font-semibold text-text-primary mb-3">Making Friends in College - Small Steps That Helped Me</h3>
+                            <p class="text-text-secondary mb-4">
+                                Social anxiety made it really hard for me to connect with people. Here are some small steps that gradually helped me build meaningful friendships...
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                        <span class="text-sm">28</span>
+                                    </button>
+                                    <button class="flex items-center text-text-secondary hover:text-primary transition-gentle">
+                                        <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                        <span class="text-sm">15 replies</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="text-center mt-8">
+                        <button class="btn-secondary">Load More Discussions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Groups Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Join a <span class="text-gradient-healing">Support Group</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Connect with peers who share similar experiences in structured, moderated support groups.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Support Group Card -->
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-text-primary">First-Generation College Students</h3>
+                            <p class="text-sm text-text-secondary">24 members • Weekly meetups</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Support for students who are the first in their family to attend college. Share experiences and navigate challenges together.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Next: Wed 7:00 PM
+                        </div>
+                        <button class="btn-primary text-sm px-4 py-2">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-text-primary">Anxiety & Stress Management</h3>
+                            <p class="text-sm text-text-secondary">67 members • Bi-weekly meetups</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Learn coping strategies and share experiences with others managing anxiety and academic stress.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Next: Fri 6:30 PM
+                        </div>
+                        <button class="btn-secondary text-sm px-4 py-2">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-text-primary">Graduate School Support</h3>
+                            <p class="text-sm text-text-secondary">31 members • Weekly meetups</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Navigate the unique challenges of graduate school, from research stress to work-life balance.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Next: Thu 8:00 PM
+                        </div>
+                        <button class="btn-accent text-sm px-4 py-2">Join Group</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Challenges -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Community <span class="text-gradient-primary">Wellness Challenges</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Join fun, supportive challenges that promote positive mental health habits and community connection.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Active Challenge -->
+                <div class="card-elevated border-l-4 border-l-secondary">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">🌟</span>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">30-Day Gratitude Challenge</h3>
+                                <p class="text-sm text-text-secondary">Active • 847 participants</p>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 bg-secondary-100 text-secondary text-sm rounded-full font-medium">Active</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Share one thing you're grateful for each day. Build a positive mindset and inspire others in the community.
+                    </p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-text-secondary mb-2">
+                            <span>Progress</span>
+                            <span>Day 12 of 30</span>
+                        </div>
+                        <div class="w-full bg-surface rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                847 joined
+                            </div>
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                                2.1k posts
+                            </div>
+                        </div>
+                        <button class="btn-secondary text-sm px-4 py-2">Join Challenge</button>
+                    </div>
+                </div>
+
+                <!-- Upcoming Challenge -->
+                <div class="card-elevated">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">🧘</span>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Mindful Minutes Challenge</h3>
+                                <p class="text-sm text-text-secondary">Starts Sept 15 • 234 pre-registered</p>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 bg-primary-100 text-primary text-sm rounded-full font-medium">Upcoming</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Commit to 10 minutes of mindfulness daily. Track your practice and share insights with the community.
+                    </p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm text-text-secondary mb-2">
+                            <span>Pre-registration</span>
+                            <span>234 members</span>
+                        </div>
+                        <div class="w-full bg-surface rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 23%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                Starts in 7 days
+                            </div>
+                        </div>
+                        <button class="btn-primary text-sm px-4 py-2">Pre-Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard -->
+            <div class="card-elevated">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="font-inter font-semibold text-text-primary">Community Leaderboard</h3>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-text-secondary">This Week</span>
+                        <button class="text-primary hover:text-primary-600">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 bg-accent-50 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-3">
+                                <span class="text-white font-bold text-sm">1</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-text-primary">@WellnessWarrior</p>
+                                <p class="text-sm text-text-secondary">Completed 7/7 daily check-ins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">🏆</span>
+                            <span class="font-semibold text-accent">350 pts</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3">
+                                <span class="text-white font-bold text-sm">2</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-text-primary">@MindfulStudent</p>
+                                <p class="text-sm text-text-secondary">6 gratitude posts, 5 check-ins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">🥈</span>
+                            <span class="font-semibold text-secondary">320 pts</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-primary-50 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <span class="text-white font-bold text-sm">3</span>
+                            </div>
+                            <div>
+                                <p class="font-medium text-text-primary">@PositiveVibes</p>
+                                <p class="text-sm text-text-secondary">5 helpful comments, 4 check-ins</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">🥉</span>
+                            <span class="font-semibold text-primary">285 pts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-inter font-semibold">MindBridge</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Bridging the gap between students and mental health support through technology, community, and compassionate care.
+                    </p>
+                </div>
+
+                <!-- Platform -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="student_dashboard.html" class="hover:text-white transition-gentle">Student Dashboard</a></li>
+                        <li><a href="mood_wellness_tracker.html" class="hover:text-white transition-gentle">Mood Tracker</a></li>
+                        <li><a href="counselor_connection.html" class="hover:text-white transition-gentle">Find Counselors</a></li>
+                        <li><a href="peer_community_hub.html" class="hover:text-white transition-gentle">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Crisis Resources</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Contact Us</a></li>
+                        <li><a href="professional_portal.html" class="hover:text-white transition-gentle">For Professionals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Legal & Privacy</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">HIPAA Compliance</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Crisis Hotline -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 mb-8">
+                <div class="bg-error bg-opacity-10 border border-error border-opacity-30 rounded-lg p-4">
+                    <div class="flex items-center">
+                        <svg class="h-6 w-6 text-error mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-white">Crisis Support Available 24/7</p>
+                            <p class="text-text-secondary">National Suicide Prevention Lifeline: <span class="text-white font-medium">988</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 MindBridge Platform. All Rights Reserved. | Empowering student mental health through technology and community.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Crisis Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="bg-error text-white p-4 rounded-full shadow-focus hover:bg-error-600 transition-gentle group">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-text-primary text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-gentle">
+                Crisis Support
+            </span>
+        </button>
+    </div>
+</body>
+</html>

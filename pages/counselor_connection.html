@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Counselor - MindBridge Platform</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Connect with licensed mental health professionals specializing in student support. Secure matching, verified credentials, and flexible scheduling." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmindbridge2226back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-gentle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-inter font-semibold text-primary">MindBridge</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mental_health_platform.html" class="text-text-secondary hover:text-primary transition-gentle">Home</a>
+                    <a href="student_dashboard.html" class="text-text-secondary hover:text-primary transition-gentle">Dashboard</a>
+                    <a href="counselor_connection.html" class="text-primary font-medium">Find Counselor</a>
+                    <a href="peer_community_hub.html" class="text-text-secondary hover:text-primary transition-gentle">Community</a>
+                    <a href="mood_wellness_tracker.html" class="text-text-secondary hover:text-primary transition-gentle">Mood Tracker</a>
+                    <a href="professional_portal.html" class="text-text-secondary hover:text-primary transition-gentle">For Professionals</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="text-primary hover:text-primary-600 font-medium transition-gentle">Sign In</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 via-secondary-50 to-primary-100 py-16">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="counselor-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="10" cy="10" r="1" fill="currentColor" class="text-primary"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#counselor-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                    Find Your Perfect 
+                    <span class="text-gradient-healing">Mental Health Match</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Connect with licensed counselors who specialize in student mental health. Our secure matching system pairs you with professionals who understand your unique challenges.
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-text-secondary">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        500+ Licensed Professionals
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        End-to-End Encrypted
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Insurance Accepted
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matching Questionnaire Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Let's Find Your <span class="text-gradient-primary">Perfect Match</span>
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Answer a few questions to help us connect you with the right counselor for your needs.
+                </p>
+            </div>
+
+            <div class="card-elevated max-w-3xl mx-auto">
+                <form id="matchingForm" class="space-y-8">
+                    <!-- Primary Concerns -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">What brings you here today?</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="anxiety" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Anxiety & Stress</p>
+                                    <p class="text-sm text-text-secondary">Academic pressure, social anxiety, general worry</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="depression" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Depression & Mood</p>
+                                    <p class="text-sm text-text-secondary">Low mood, motivation issues, sadness</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="relationships" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Relationships</p>
+                                    <p class="text-sm text-text-secondary">Family, friends, romantic relationships</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="academic" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Academic Challenges</p>
+                                    <p class="text-sm text-text-secondary">Study habits, performance, career decisions</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="identity" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Identity & Self-Discovery</p>
+                                    <p class="text-sm text-text-secondary">LGBTQ+ support, cultural identity, self-esteem</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="concerns" value="trauma" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Trauma & Recovery</p>
+                                    <p class="text-sm text-text-secondary">Past experiences, PTSD, healing support</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Counselor Preferences -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Counselor Preferences</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Gender Preference</label>
+                                <select name="gender_preference" class="input-field">
+                                    <option value>No preference</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="non-binary">Non-binary</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Age Range Preference</label>
+                                <select name="age_preference" class="input-field">
+                                    <option value>No preference</option>
+                                    <option value="20s-30s">20s-30s (Younger professionals)</option>
+                                    <option value="30s-40s">30s-40s (Mid-career)</option>
+                                    <option value="40s+">40s+ (Experienced professionals)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Communication Style -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Communication Style</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="radio" name="communication_style" value="direct" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Direct & Solution-Focused</p>
+                                    <p class="text-sm text-text-secondary">Practical advice and clear action steps</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="radio" name="communication_style" value="empathetic" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Empathetic & Supportive</p>
+                                    <p class="text-sm text-text-secondary">Gentle guidance with emotional support</p>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="radio" name="communication_style" value="collaborative" class="mr-3 text-primary" />
+                                <div>
+                                    <p class="font-medium text-text-primary">Collaborative & Exploratory</p>
+                                    <p class="text-sm text-text-secondary">Working together to discover insights</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Considerations -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Cultural & Identity Considerations</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="cultural_needs" value="lgbtq" class="mr-3 text-primary" />
+                                <span class="text-text-primary">LGBTQ+ Affirming</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="cultural_needs" value="poc" class="mr-3 text-primary" />
+                                <span class="text-text-primary">People of Color Specialization</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="cultural_needs" value="religious" class="mr-3 text-primary" />
+                                <span class="text-text-primary">Religious/Spiritual Integration</span>
+                            </label>
+                            <label class="flex items-center p-3 border border-border rounded-lg cursor-pointer hover:border-primary transition-gentle">
+                                <input type="checkbox" name="cultural_needs" value="international" class="mr-3 text-primary" />
+                                <span class="text-text-primary">International Student Support</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-6">
+                        <button type="submit" class="btn-primary text-lg px-12 py-4">
+                            Find My Counselor Matches
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Counselors Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Meet Our <span class="text-gradient-primary">Top-Rated Counselors</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Licensed professionals with specialized training in student mental health and proven track records of success.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Counselor 1 -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="relative inline-block mb-4">
+                            <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dr. Sarah Chen - Licensed Clinical Psychologist" class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-primary-100" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-success rounded-full border-2 border-white flex items-center justify-center">
+                                <svg class="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-1">Dr. Sarah Chen</h3>
+                        <p class="text-text-secondary mb-2">Licensed Clinical Psychologist</p>
+                        <div class="flex items-center justify-center mb-3">
+                            <div class="flex text-accent mr-2">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-text-secondary">4.9 (127 reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Specializations -->
+                    <div class="mb-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Anxiety & Stress</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Academic Pressure</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">LGBTQ+ Affirming</span>
+                        </div>
+                    </div>
+
+                    <!-- Approach -->
+                    <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                        "I use cognitive-behavioral therapy combined with mindfulness techniques to help students develop practical coping strategies for academic and social challenges."
+                    </p>
+
+                    <!-- Credentials -->
+                    <div class="bg-surface rounded-lg p-3 mb-4">
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>License: PSY-12345-CA</span>
+                            <span>8 years experience</span>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="mb-6">
+                        <p class="text-sm font-medium text-text-primary mb-2">Next Available:</p>
+                        <div class="flex items-center text-sm text-success">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Today at 3:00 PM
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-3">
+                        <button class="btn-primary w-full">Book Consultation</button>
+                        <button class="w-full px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary-50 transition-gentle">
+                            Watch Video Introduction
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Counselor 2 -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="relative inline-block mb-4">
+                            <img src="https://images.pixabay.com/photo/2017/03/01/22/18/avatar-2109804_1280.png" alt="Dr. Michael Rodriguez - Licensed Marriage and Family Therapist" class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-primary-100" onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-success rounded-full border-2 border-white flex items-center justify-center">
+                                <svg class="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-1">Dr. Michael Rodriguez</h3>
+                        <p class="text-text-secondary mb-2">Licensed Marriage & Family Therapist</p>
+                        <div class="flex items-center justify-center mb-3">
+                            <div class="flex text-accent mr-2">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-text-secondary">4.8 (94 reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Specializations -->
+                    <div class="mb-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Relationships</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Family Issues</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">Cultural Identity</span>
+                        </div>
+                    </div>
+
+                    <!-- Approach -->
+                    <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                        "I specialize in helping students navigate complex family dynamics and cultural expectations while building healthy relationships and self-identity."
+                    </p>
+
+                    <!-- Credentials -->
+                    <div class="bg-surface rounded-lg p-3 mb-4">
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>License: MFT-67890-CA</span>
+                            <span>12 years experience</span>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="mb-6">
+                        <p class="text-sm font-medium text-text-primary mb-2">Next Available:</p>
+                        <div class="flex items-center text-sm text-warning">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Tomorrow at 10:00 AM
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-3">
+                        <button class="btn-primary w-full">Book Consultation</button>
+                        <button class="w-full px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary-50 transition-gentle">
+                            Watch Video Introduction
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Counselor 3 -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="relative inline-block mb-4">
+                            <img src="https://images.unsplash.com/photo-1594824492386-2a4c7e5b3c75?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Aisha Patel - Licensed Clinical Social Worker" class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-primary-100" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-success rounded-full border-2 border-white flex items-center justify-center">
+                                <svg class="h-3 w-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-1">Dr. Aisha Patel</h3>
+                        <p class="text-text-secondary mb-2">Licensed Clinical Social Worker</p>
+                        <div class="flex items-center justify-center mb-3">
+                            <div class="flex text-accent mr-2">
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-text-secondary">4.9 (156 reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Specializations -->
+                    <div class="mb-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Depression</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Trauma Recovery</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">International Students</span>
+                        </div>
+                    </div>
+
+                    <!-- Approach -->
+                    <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                        "I provide culturally sensitive therapy using trauma-informed approaches to help students heal from past experiences and build resilience for the future."
+                    </p>
+
+                    <!-- Credentials -->
+                    <div class="bg-surface rounded-lg p-3 mb-4">
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>License: LCSW-54321-CA</span>
+                            <span>10 years experience</span>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="mb-6">
+                        <p class="text-sm font-medium text-text-primary mb-2">Next Available:</p>
+                        <div class="flex items-center text-sm text-error">
+                            <svg class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                            Next week - Join waitlist
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-3">
+                        <button class="btn-secondary w-full">Join Waitlist</button>
+                        <button class="w-full px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary-50 transition-gentle">
+                            Watch Video Introduction
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-12">
+                <button class="btn-primary text-lg px-8 py-4">
+                    View All 500+ Counselors
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance & Payment Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Affordable Care for <span class="text-gradient-primary">Every Student</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    We accept most insurance plans and offer sliding scale fees to ensure mental health care is accessible to all students.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Insurance Coverage -->
+                <div class="card-elevated text-center">
+                    <div class="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Insurance Accepted</h3>
+                    <p class="text-text-secondary mb-6">
+                        We work with most major insurance providers including student health plans.
+                    </p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center justify-center">
+                            <svg class="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Aetna, Blue Cross Blue Shield
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <svg class="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cigna, UnitedHealthcare
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <svg class="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Student Health Plans
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sliding Scale -->
+                <div class="card-elevated text-center">
+                    <div class="bg-secondary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Sliding Scale Fees</h3>
+                    <p class="text-text-secondary mb-6">
+                        Income-based pricing ensures therapy is accessible regardless of financial situation.
+                    </p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center justify-between">
+                            <span>Standard Rate:</span>
+                            <span class="font-medium">$120/session</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>Student Rate:</span>
+                            <span class="font-medium">$60-90/session</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>Financial Hardship:</span>
+                            <span class="font-medium">$30-50/session</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Support -->
+                <div class="card-elevated text-center">
+                    <div class="bg-error-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <svg class="h-8 w-8 text-error" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Crisis Support</h3>
+                    <p class="text-text-secondary mb-6">
+                        24/7 emergency support available at no cost for students in crisis situations.
+                    </p>
+                    <div class="space-y-3">
+                        <button class="btn-accent w-full">
+                            Get Immediate Help
+                        </button>
+                        <p class="text-xs text-text-secondary">
+                            Crisis hotline: <span class="font-medium">988</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Your Privacy is <span class="text-gradient-primary">Our Priority</span>
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    We use military-grade encryption and maintain the highest standards of confidentiality to protect your personal information.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- HIPAA Compliance -->
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-gentle mb-4">
+                        <svg class="h-12 w-12 text-success mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 class="font-inter font-semibold text-text-primary mb-2">HIPAA Compliant</h3>
+                        <p class="text-sm text-text-secondary">Full healthcare privacy protection</p>
+                    </div>
+                </div>
+
+                <!-- End-to-End Encryption -->
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-gentle mb-4">
+                        <svg class="h-12 w-12 text-primary mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 class="font-inter font-semibold text-text-primary mb-2">End-to-End Encrypted</h3>
+                        <p class="text-sm text-text-secondary">Military-grade security</p>
+                    </div>
+                </div>
+
+                <!-- Secure Storage -->
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-gentle mb-4">
+                        <svg class="h-12 w-12 text-secondary mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M5 8a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm0 2a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm0 2a1 1 0 011-1h4a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 class="font-inter font-semibold text-text-primary mb-2">Secure Storage</h3>
+                        <p class="text-sm text-text-secondary">Protected data centers</p>
+                    </div>
+                </div>
+
+                <!-- Licensed Professionals -->
+                <div class="text-center">
+                    <div class="bg-white rounded-xl p-6 shadow-gentle mb-4">
+                        <svg class="h-12 w-12 text-accent mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <h3 class="font-inter font-semibold text-text-primary mb-2">Licensed Professionals</h3>
+                        <p class="text-sm text-text-secondary">Verified credentials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-inter font-bold text-white mb-6">
+                Ready to Connect with Your Counselor?
+            </h2>
+            <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                Take the first step towards better mental health. Our matching system will connect you with the perfect counselor for your needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 rounded-lg font-inter font-semibold text-lg hover:bg-primary-50 transition-gentle shadow-soft">
+                    Start Matching Process
+                </button>
+                <button class="bg-error text-white px-8 py-4 rounded-lg font-inter font-semibold text-lg hover:bg-error-600 transition-gentle shadow-soft">
+                    Need Help Now?
+                </button>
+            </div>
+            <p class="text-primary-200 text-sm mt-6">
+                Free consultation • Insurance accepted • HIPAA compliant
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-inter font-semibold">MindBridge</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Bridging the gap between students and mental health support through technology, community, and compassionate care.
+                    </p>
+                </div>
+
+                <!-- Platform -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="student_dashboard.html" class="hover:text-white transition-gentle">Student Dashboard</a></li>
+                        <li><a href="mood_wellness_tracker.html" class="hover:text-white transition-gentle">Mood Tracker</a></li>
+                        <li><a href="counselor_connection.html" class="hover:text-white transition-gentle">Find Counselors</a></li>
+                        <li><a href="peer_community_hub.html" class="hover:text-white transition-gentle">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Crisis Resources</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Contact Us</a></li>
+                        <li><a href="professional_portal.html" class="hover:text-white transition-gentle">For Professionals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Legal & Privacy</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">HIPAA Compliance</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Crisis Hotline -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 mb-8">
+                <div class="bg-error bg-opacity-10 border border-error border-opacity-30 rounded-lg p-4">
+                    <div class="flex items-center">
+                        <svg class="h-6 w-6 text-error mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-white">Crisis Support Available 24/7</p>
+                            <p class="text-text-secondary">National Suicide Prevention Lifeline: <span class="text-white font-medium">988</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 MindBridge Platform. All Rights Reserved. | Empowering student mental health through technology and community.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Crisis Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="bg-error text-white p-4 rounded-full shadow-focus hover:bg-error-600 transition-gentle group">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-text-primary text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-gentle">
+                Crisis Support
+            </span>
+        </button>
+    </div>
+</body>
+</html>

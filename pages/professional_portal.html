@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portal - MindBridge Platform</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Secure counselor portal for managing student mental health practice with clinical tools, scheduling, and compliance monitoring." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmindbridge2226back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-gentle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-xl font-inter font-semibold text-primary">MindBridge</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mental_health_platform.html" class="text-text-secondary hover:text-primary transition-gentle">Home</a>
+                    <a href="student_dashboard.html" class="text-text-secondary hover:text-primary transition-gentle">Student Portal</a>
+                    <a href="counselor_connection.html" class="text-text-secondary hover:text-primary transition-gentle">Find Counselor</a>
+                    <a href="peer_community_hub.html" class="text-text-secondary hover:text-primary transition-gentle">Community</a>
+                    <a href="mood_wellness_tracker.html" class="text-text-secondary hover:text-primary transition-gentle">Mood Tracker</a>
+                    <a href="professional_portal.html" class="text-primary font-medium">Professional Portal</a>
+                </div>
+
+                <!-- Professional Profile -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dr. Sarah Chen - Licensed Therapist" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="text-sm">
+                            <p class="font-medium text-text-primary">Dr. Sarah Chen</p>
+                            <p class="text-xs text-text-secondary">Licensed Therapist</p>
+                        </div>
+                    </div>
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Overview -->
+    <section class="py-8 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Welcome Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-inter font-bold text-text-primary mb-2">
+                    Welcome back, Dr. Chen
+                </h1>
+                <p class="text-text-secondary">
+                    Today is September 8, 2025 • You have 6 appointments scheduled
+                </p>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                <div class="card-elevated">
+                    <div class="flex items-center">
+                        <div class="bg-primary-100 rounded-full p-3 mr-4">
+                            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-text-primary">24</p>
+                            <p class="text-sm text-text-secondary">Active Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-elevated">
+                    <div class="flex items-center">
+                        <div class="bg-secondary-100 rounded-full p-3 mr-4">
+                            <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-text-primary">6</p>
+                            <p class="text-sm text-text-secondary">Today's Sessions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-elevated">
+                    <div class="flex items-center">
+                        <div class="bg-accent-100 rounded-full p-3 mr-4">
+                            <svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-text-primary">89%</p>
+                            <p class="text-sm text-text-secondary">Progress Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-elevated">
+                    <div class="flex items-center">
+                        <div class="bg-error-100 rounded-full p-3 mr-4">
+                            <svg class="h-6 w-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-text-primary">2</p>
+                            <p class="text-sm text-text-secondary">Priority Alerts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dashboard Content -->
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Left Column - Today's Schedule & Priority Alerts -->
+                <div class="lg:col-span-2 space-y-8">
+                    <!-- Priority Alerts -->
+                    <div class="card-elevated">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">Priority Alerts</h3>
+                            <span class="bg-error-100 text-error px-3 py-1 rounded-full text-sm font-medium">2 Active</span>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-error-50 border border-error-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <div class="bg-error-100 rounded-full p-2 mr-4">
+                                        <svg class="h-5 w-5 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-text-primary mb-1">High Risk Assessment - Student ID: #2847</h4>
+                                        <p class="text-sm text-text-secondary mb-2">PHQ-9 score increased to 19. Last session: 3 days ago. Requires immediate follow-up.</p>
+                                        <div class="flex space-x-2">
+                                            <button class="bg-error text-white px-3 py-1 rounded text-sm font-medium hover:bg-error-600 transition-gentle">
+                                                Contact Now
+                                            </button>
+                                            <button class="bg-white border border-error text-error px-3 py-1 rounded text-sm font-medium hover:bg-error-50 transition-gentle">
+                                                Schedule Emergency
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-warning-50 border border-warning-200 rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <div class="bg-warning-100 rounded-full p-2 mr-4">
+                                        <svg class="h-5 w-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-text-primary mb-1">Missed Appointments - Student ID: #1923</h4>
+                                        <p class="text-sm text-text-secondary mb-2">3 consecutive missed sessions. Last contact: 1 week ago. Outreach recommended.</p>
+                                        <div class="flex space-x-2">
+                                            <button class="bg-warning text-white px-3 py-1 rounded text-sm font-medium hover:bg-warning-600 transition-gentle">
+                                                Send Message
+                                            </button>
+                                            <button class="bg-white border border-warning text-warning px-3 py-1 rounded text-sm font-medium hover:bg-warning-50 transition-gentle">
+                                                Update Status
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Today's Schedule -->
+                    <div class="card-elevated">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">Today's Schedule</h3>
+                            <button class="text-primary hover:text-primary-600 font-medium transition-gentle">View Full Calendar</button>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Current Session -->
+                            <div class="bg-primary-50 border border-primary-200 rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="bg-primary rounded-full w-3 h-3 mr-4"></div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">10:00 AM - 10:50 AM</p>
+                                            <p class="text-sm text-text-secondary">Individual Session - Student #1847</p>
+                                            <p class="text-xs text-primary font-medium">In Progress</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="bg-primary text-white px-3 py-1 rounded text-sm font-medium hover:bg-primary-600 transition-gentle">
+                                            Join Session
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Upcoming Sessions -->
+                            <div class="border border-border rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="bg-text-secondary rounded-full w-3 h-3 mr-4"></div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">11:00 AM - 11:50 AM</p>
+                                            <p class="text-sm text-text-secondary">Individual Session - Student #2156</p>
+                                            <p class="text-xs text-text-secondary">Anxiety & Academic Stress</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="bg-surface border border-border text-text-primary px-3 py-1 rounded text-sm font-medium hover:bg-border-light transition-gentle">
+                                            Prepare
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-border rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="bg-text-secondary rounded-full w-3 h-3 mr-4"></div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">2:00 PM - 2:50 PM</p>
+                                            <p class="text-sm text-text-secondary">Group Session - Mindfulness & Stress</p>
+                                            <p class="text-xs text-text-secondary">6 participants registered</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="bg-surface border border-border text-text-primary px-3 py-1 rounded text-sm font-medium hover:bg-border-light transition-gentle">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-border rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="bg-text-secondary rounded-full w-3 h-3 mr-4"></div>
+                                        <div>
+                                            <p class="font-semibold text-text-primary">3:30 PM - 4:20 PM</p>
+                                            <p class="text-sm text-text-secondary">Individual Session - Student #3421</p>
+                                            <p class="text-xs text-text-secondary">Depression & Social Anxiety</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="bg-surface border border-border text-text-primary px-3 py-1 rounded text-sm font-medium hover:bg-border-light transition-gentle">
+                                            Prepare
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Quick Actions & Messages -->
+                <div class="space-y-8">
+                    <!-- Quick Actions -->
+                    <div class="card-elevated">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">Quick Actions</h3>
+                        
+                        <div class="space-y-3">
+                            <button class="w-full bg-primary text-white p-3 rounded-lg font-medium hover:bg-primary-600 transition-gentle flex items-center">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                                Schedule New Session
+                            </button>
+                            
+                            <button class="w-full bg-secondary text-white p-3 rounded-lg font-medium hover:bg-secondary-600 transition-gentle flex items-center">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                Create Assessment
+                            </button>
+                            
+                            <button class="w-full bg-accent text-white p-3 rounded-lg font-medium hover:bg-accent-600 transition-gentle flex items-center">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                Send Message
+                            </button>
+                            
+                            <button class="w-full bg-surface border border-border text-text-primary p-3 rounded-lg font-medium hover:bg-border-light transition-gentle flex items-center">
+                                <svg class="h-5 w-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                View Analytics
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Recent Messages -->
+                    <div class="card-elevated">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">Recent Messages</h3>
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs font-medium">3 New</span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="bg-primary-50 border border-primary-200 rounded-lg p-3">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-primary text-sm font-semibold">A</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <p class="font-medium text-text-primary">Student #1847</p>
+                                            <span class="text-xs text-text-secondary">2 min ago</span>
+                                        </div>
+                                        <p class="text-sm text-text-secondary">Thank you for today's session. I'm feeling much better about the upcoming exam...</p>
+                                        <button class="text-primary text-xs font-medium mt-1 hover:text-primary-600 transition-gentle">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-secondary-50 border border-secondary-200 rounded-lg p-3">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-secondary text-sm font-semibold">M</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <p class="font-medium text-text-primary">Student #2156</p>
+                                            <span class="text-xs text-text-secondary">1 hour ago</span>
+                                        </div>
+                                        <p class="text-sm text-text-secondary">I've been practicing the breathing exercises you taught me. Can we discuss...</p>
+                                        <button class="text-secondary text-xs font-medium mt-1 hover:text-secondary-600 transition-gentle">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-border rounded-lg p-3">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-accent text-sm font-semibold">J</span>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <p class="font-medium text-text-primary">Student #3421</p>
+                                            <span class="text-xs text-text-secondary">3 hours ago</span>
+                                        </div>
+                                        <p class="text-sm text-text-secondary">I wanted to reschedule our appointment for tomorrow. Is there availability...</p>
+                                        <button class="text-accent text-xs font-medium mt-1 hover:text-accent-600 transition-gentle">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="w-full mt-4 text-primary font-medium text-sm hover:text-primary-600 transition-gentle">
+                            View All Messages
+                        </button>
+                    </div>
+
+                    <!-- Professional Development -->
+                    <div class="card-elevated">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">Professional Development</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-surface rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Digital Therapy Best Practices Webinar" class="w-16 h-12 rounded object-cover mr-3" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-text-primary mb-1">Digital Therapy Best Practices</h4>
+                                        <p class="text-sm text-text-secondary mb-2">2 CE Credits • Sept 12, 2025</p>
+                                        <button class="text-primary text-sm font-medium hover:text-primary-600 transition-gentle">Register Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <img src="https://images.pixabay.com/photo/2016/11/29/06/15/adult-1867743_1280.jpg" alt="Student Mental Health Research Update" class="w-16 h-12 rounded object-cover mr-3" onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-text-primary mb-1">Student Mental Health Research</h4>
+                                        <p class="text-sm text-text-secondary mb-2">Latest findings & applications</p>
+                                        <button class="text-primary text-sm font-medium hover:text-primary-600 transition-gentle">Read Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Tools Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Clinical Tools & Resources
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Comprehensive suite of validated assessment instruments and treatment planning tools designed for student populations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Assessment Tools -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center">
+                        <div class="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-gentle">
+                            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Assessment Instruments</h3>
+                        <p class="text-text-secondary mb-6">
+                            Validated screening tools including PHQ-9, GAD-7, and student-specific assessments for comprehensive evaluation.
+                        </p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">PHQ-9 Depression</span>
+                                <span class="text-primary font-medium">Available</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">GAD-7 Anxiety</span>
+                                <span class="text-primary font-medium">Available</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Academic Stress Scale</span>
+                                <span class="text-primary font-medium">Available</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full">Access Tools</button>
+                    </div>
+                </div>
+
+                <!-- Treatment Planning -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center">
+                        <div class="bg-secondary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-gentle">
+                            <svg class="h-8 w-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Treatment Planning</h3>
+                        <p class="text-text-secondary mb-6">
+                            Evidence-based treatment templates and goal-setting frameworks tailored for common student mental health concerns.
+                        </p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">CBT Templates</span>
+                                <span class="text-secondary font-medium">12 Available</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Goal Setting Tools</span>
+                                <span class="text-secondary font-medium">8 Available</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Progress Tracking</span>
+                                <span class="text-secondary font-medium">Active</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-secondary w-full">Create Plan</button>
+                    </div>
+                </div>
+
+                <!-- Analytics Dashboard -->
+                <div class="card-elevated group hover:shadow-focus transition-all duration-300">
+                    <div class="text-center">
+                        <div class="bg-accent-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-gentle">
+                            <svg class="h-8 w-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Treatment Analytics</h3>
+                        <p class="text-text-secondary mb-6">
+                            Privacy-protected insights on treatment outcomes and client progress to enhance therapeutic effectiveness.
+                        </p>
+                        
+                        <div class="bg-surface rounded-lg p-4 mb-6">
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <p class="text-lg font-semibold text-accent">89%</p>
+                                    <p class="text-xs text-text-secondary">Improvement Rate</p>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-semibold text-primary">4.2</p>
+                                    <p class="text-xs text-text-secondary">Avg Sessions</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-accent w-full">View Analytics</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance & Security -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Compliance & Security Monitoring
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Comprehensive compliance tracking and security monitoring to ensure HIPAA adherence and protect client confidentiality.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Compliance Dashboard -->
+                <div class="card-elevated">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary">Compliance Status</h3>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
+                            <span class="text-success font-medium text-sm">All Systems Compliant</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-success-50 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="font-medium text-text-primary">HIPAA Compliance</span>
+                            </div>
+                            <span class="text-success font-medium">Active</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-success-50 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="font-medium text-text-primary">Data Encryption</span>
+                            </div>
+                            <span class="text-success font-medium">256-bit AES</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-success-50 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="font-medium text-text-primary">Audit Logging</span>
+                            </div>
+                            <span class="text-success font-medium">Complete</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-success-50 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="font-medium text-text-primary">Access Controls</span>
+                            </div>
+                            <span class="text-success font-medium">Multi-Factor</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 bg-surface border border-border text-text-primary p-3 rounded-lg font-medium hover:bg-border-light transition-gentle">
+                        View Compliance Report
+                    </button>
+                </div>
+
+                <!-- Security Monitoring -->
+                <div class="card-elevated">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary">Security Monitoring</h3>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-primary rounded-full mr-2"></div>
+                            <span class="text-primary font-medium text-sm">Real-time Monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-surface rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium text-text-primary">Session Security</span>
+                                <span class="text-primary font-medium">100%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-surface rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium text-text-primary">Data Protection</span>
+                                <span class="text-primary font-medium">100%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-surface rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium text-text-primary">Access Monitoring</span>
+                                <span class="text-primary font-medium">Active</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Last security scan: 2 hours ago</p>
+                        </div>
+
+                        <div class="bg-surface rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium text-text-primary">Threat Detection</span>
+                                <span class="text-success font-medium">No Threats</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">System integrity verified</p>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 bg-surface border border-border text-text-primary p-3 rounded-lg font-medium hover:bg-border-light transition-gentle">
+                        View Security Logs
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c5.514 0 10 4.486 10 10s-4.486 10-10 10S6 21.514 6 16 10.486 6 16 6zm-2 4v8l6-4-6-4z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-inter font-semibold">MindBridge</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        Professional mental health platform designed specifically for student-focused practice and care.
+                    </p>
+                </div>
+
+                <!-- Platform -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="student_dashboard.html" class="hover:text-white transition-gentle">Student Dashboard</a></li>
+                        <li><a href="mood_wellness_tracker.html" class="hover:text-white transition-gentle">Mood Tracker</a></li>
+                        <li><a href="counselor_connection.html" class="hover:text-white transition-gentle">Find Counselors</a></li>
+                        <li><a href="peer_community_hub.html" class="hover:text-white transition-gentle">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Professional Tools -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Professional Tools</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Clinical Assessments</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Treatment Planning</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Secure Messaging</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Analytics Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Professional Support</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Training Resources</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Compliance Help</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-gentle">Technical Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional Credentials -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 mb-8">
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-lg px-4 py-2">
+                        <svg class="h-6 w-6 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-white font-medium">HIPAA Compliant</span>
+                    </div>
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-lg px-4 py-2">
+                        <svg class="h-6 w-6 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-white font-medium">End-to-End Encrypted</span>
+                    </div>
+                    <div class="flex items-center bg-white bg-opacity-10 rounded-lg px-4 py-2">
+                        <svg class="h-6 w-6 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-white font-medium">Licensed Professionals Only</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-text-secondary border-opacity-20 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 MindBridge Platform. All Rights Reserved. | Professional mental health platform for student-focused care.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Emergency Support Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="bg-error text-white p-4 rounded-full shadow-focus hover:bg-error-600 transition-gentle group">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-text-primary text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-gentle">
+                Emergency Support
+            </span>
+        </button>
+    </div>
+</body>
+</html>
