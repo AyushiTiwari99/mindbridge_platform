@@ -29,7 +29,7 @@
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(48, 101, 187, 0.5);
+  --tw-ring-color: rgba(175, 184, 200, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -2007,7 +2007,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   /* Primary Colors */
-  --color-primary: #4A90A4;
+  --color-primary: #F9D9B7;
   /* trustworthy-calm */
   --color-primary-50: #F0F7F9;
   /* trustworthy-calm-50 */
@@ -2076,7 +2076,7 @@ h1, h2, h3, h4, h5, h6 {
   --color-accent-900: #8A4825;
   /* warm-encouragement-900 */
   /* Background Colors */
-  --color-background: #FEFEFE;
+  --color-background: #F9D9B7;
   /* clean-canvas */
   --color-surface: #F8F9FA;
   /* subtle-elevation */

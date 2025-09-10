@@ -7,7 +7,7 @@
 
 :root {
   /* Primary Colors */
-  --color-primary: #4A90A4; /* trustworthy-calm */
+  --color-primary: #f9d9b7; /* trustworthy-calm */
   --color-primary-50: #F0F7F9; /* trustworthy-calm-50 */
   --color-primary-100: #D6EBF1; /* trustworthy-calm-100 */
   --color-primary-200: #B8DCE6; /* trustworthy-calm-200 */
@@ -46,8 +46,8 @@
   --color-accent-900: #8A4825; /* warm-encouragement-900 */
 
   /* Background Colors */
-  --color-background: #FEFEFE; /* clean-canvas */
-  --color-surface: #F8F9FA; /* subtle-elevation */
+  --color-background: #b37b3f; /* clean-canvas */
+  --color-surface: #ECF87F; /* subtle-elevation */
 
   /* Text Colors */
   --color-text-primary: #2D3748; /* clear-reading */
